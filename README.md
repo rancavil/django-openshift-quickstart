@@ -36,11 +36,11 @@ Install the RHC client tools if you have not already done so:
 
 Create a python-2.7 application
 
-    rhc app create -a django-proj -t python-2.7
+    rhc app create -a djangoproj -t python-2.7
 
 Add this upstream repo
 
-    cd django-proj
+    cd djangoproj
     git remote add upstream -m master git://github.com/rancavil/django-openshift-quickstart.git
     git pull -s recursive -X theirs upstream master
 
@@ -53,7 +53,7 @@ special attention.
 	
 That's it. You can now checkout your application at:
 
-    http://django-proj-$yournamespace.rhcloud.com
+    http://djangoproj-$yournamespace.rhcloud.com
 
 Admin user name and password
 ----------------------------
@@ -90,7 +90,7 @@ You should see the output:
 Django project directory structure
 ----------------------------------
 
-     django-proj/
+     djangoproj/
         .gitignore
      	.openshift/
      		README.md
