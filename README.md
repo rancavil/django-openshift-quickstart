@@ -87,6 +87,8 @@ You should see the output:
      		 user: admin
      		 SY1ScjQGb2qb
 
+After, you can change the password in the Django admin console.
+
 Django project directory structure
 ----------------------------------
 
@@ -122,4 +124,4 @@ Django project directory structure
      		static/	(Public static content gets served here)
      			README
 
-From HERE you can start with your own application 
+From HERE you can start with your own application.
