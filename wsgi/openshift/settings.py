@@ -15,7 +15,7 @@ ON_OPENSHIFT = False
 if os.environ.has_key('OPENSHIFT_REPO_DIR'):
      ON_OPENSHIFT = True
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -70,7 +70,7 @@ ROOT_URLCONF = 'urls'
 WSGI_APPLICATION = 'wsgi.application'
 
 TEMPLATE_DIRS = (
-     os.path.join(BASE_DIR,'openshift','templates'),
+     os.path.join(BASE_DIR,'templates'),
 )
 
 # Database
@@ -86,7 +86,7 @@ else:
      DATABASES = {
          'default': {
              'ENGINE': 'django.db.backends.sqlite3',
-             'NAME': os.path.join(BASE_DIR, 'openshift', 'db.sqlite3'),
+             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
          }
     }
 
@@ -106,5 +106,5 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'openshift', '..', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
 STATIC_URL = '/static/'
