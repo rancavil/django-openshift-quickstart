@@ -5,13 +5,13 @@ This git repository helps you get up and running quickly w/ a Django 1.6
 installation on OpenShift.  The Django project name used in this repo
 is 'openshift' but you can feel free to change it.  Right now the
 backend is sqlite3 and the database runtime is found in
-`$OPENSHIFT_DATA_DIR/sqlite3.db`.
+`$OPENSHIFT_DATA_DIR/db.sqlite3`.
 
 Before you push this app for the first time, you will need to change
 the [Django admin password](#admin-user-name-and-password).
 Then, when you first push this
 application to the cloud instance, the sqlite database is copied from
-`wsgi/openshift/sqlite3.db` to $OPENSHIFT_DATA_DIR/ with your newly 
+`wsgi/openshift/db.sqlite3` to $OPENSHIFT_DATA_DIR/ with your newly 
 changed login credentials. Other than the password change, this is the 
 stock database that is created when `python manage.py syncdb` is run with
 only the admin app installed.
