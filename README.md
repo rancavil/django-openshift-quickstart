@@ -44,6 +44,8 @@ Add this upstream repo
     git remote add upstream -m master git://github.com/rancavil/django-openshift-quickstart.git
     git pull -s recursive -X theirs upstream master
 
+Note: If you want to use the Redis-Cloud with Django see [the wiki](https://github.com/rancavil/django-openshift-quickstart/wiki/Django-1.6-with-Redis-Cloud) 
+
 Then push the repo upstream
 
     git push
