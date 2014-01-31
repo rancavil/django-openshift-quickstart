@@ -5,7 +5,6 @@
 *~
 *.log
 *.egg-info
-*.py.disabled
 .project
 .pydevproject
 /venv/
