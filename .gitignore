@@ -7,7 +7,7 @@
 *.egg-info
 .project
 .pydevproject
-/venv/
-/virtenv/
-/dist/
-/build/
+venv/
+virtenv/
+dist/
+build/
